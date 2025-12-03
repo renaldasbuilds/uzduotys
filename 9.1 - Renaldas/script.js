@@ -2,12 +2,6 @@ let a = 15;
 let b = 27;
 let c = 24;
 
-// 1.1
-if(a === b) {
-    console.log('1.1 skaiciai lygus');
-} else {
-    console.log('1.1 skaiciai nelygus');
-}
 
 // 1.2
 if(b === c) {

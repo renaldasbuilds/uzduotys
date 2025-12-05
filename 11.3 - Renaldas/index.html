@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.3 - Renaldas</title>
+
+    <!-- sriftai -->
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- korteles -->
+     <div class="cards">
+        <!-- kortele 1 -->
+
+        <div class="card">
+            <div class="selected-mark"></div>
+            <div class="card-image">
+                <img src="images/salads.jpg" alt="salotos su vistiena">
+            </div>
+            <div class="card-content">
+                <p class="title">Vištiena su salotom</p>
+                <p class="description">
+                    Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                </p>
+            </div>
+        </div>
+
+        <!-- kortele 2 -->
+        <div class="card">
+            <div class="selected-mark"></div>
+            <div class="card-image">
+                <img src="images/cake.jpg" alt="salotos su vistiena">
+            </div>
+            <div class="card-content">
+                <p class="title">Tortas su mėlynėm</p>
+                <p class="description">
+                    Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                </p>
+            </div>
+        </div>
+
+        <!-- kortele 3 -->
+        <div class="card">
+            <div class="selected-mark"></div>
+            <div class="card-image">
+                <img src="images/rammen.jpg" alt="salotos su vistiena">
+            </div>
+            <div class="card-content">
+                <p class="title">Makaronai su mėsa</p>
+                <p class="description">
+                    Amet et at aliquam duis ut morbi turpis. Quis cursus tincidunt risus purus faucibus elit ut. Pellentesque montes.
+                </p>
+            </div>
+        </div>
+
+     </div>
+
+     <!-- porciju value -->
+      <div class="portions">
+         <p class="title">
+            Kiek porcijų gaminsite?
+         </p>
+         <input class="slider"
+                id="sliderRange"
+                type="range" 
+                min="1"
+                max="10" 
+                value="">
+         <p class="value">
+            <div class="values">
+                Reiksme:
+                <span id="slider-value"></span>
+                Korteles ID:            
+                <span id="card-id"></span>
+            </div>
+         </p>       
+      </div>
+
+      <!-- ingriedientai -->
+       <div class="ingredients">
+            <p class="title">
+                Miltu:
+                <span id="flour">-</span>
+            </p>
+            <p class="title">
+                Kiausiniu:
+                <span id="eggs">-</span>
+            </p>
+            <p class="title">
+                Melyniu:
+                <span id="berries">-</span>
+            </p>
+            <p class="title">
+                Cukraus:
+                <span id="sugar">-</span>
+            </p>
+        </div>
+    <!-- script -->
+     <script src="script.js"></script>
+</body>
+</html>

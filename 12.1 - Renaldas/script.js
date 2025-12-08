@@ -75,5 +75,5 @@ let answer = 0;
 
 for(let i = 0; i < aValue; i++) {
     answer += bValue;
-    console.log(answer);
 }
+console.log(answer);

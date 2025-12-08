@@ -1,15 +1,16 @@
 window.addEventListener("load", function() {
+   
     let current = 0; // rodom pirma kortele
-    let slider = document.getElementById("sliderRange");
+    let slider = document.getElementById("sliderRange"); 
 
     // sliderio reiksme
     let range = parseInt((slider.value));
 
     // produktai
-    let eggs = 0;
-    let flour = 0;
+    let eggs    = 0;
+    let flour   = 0;
     let berries = 0;
-    let sugar = 0;
+    let sugar   = 0;
 
 
     function updateValues(){
@@ -39,16 +40,21 @@ window.addEventListener("load", function() {
                 return;   
         }
 
-        document.getElementById('eggs').innerHTML = `${eggs}g`;
-        document.getElementById('flour').innerHTML = `${flour}g`;
+        document.getElementById('eggs').innerHTML    = `${eggs}g`;
+        document.getElementById('flour').innerHTML   = `${flour}g`;
         document.getElementById('berries').innerHTML = `${berries}g`;
-        document.getElementById('sugar').innerHTML = `${sugar}g`;
+        document.getElementById('sugar').innerHTML   = `${sugar}g`;
     }
     
+   /*function getCardNameByID() {
+
+   }*/
+
 
     document.querySelectorAll(".card").forEach(function (card, index) {
         card.addEventListener("click", function() {   
-            console.log('kortele');
+            console.log('paspausta ant: ', index);
+
             current = index;
             range = parseInt((slider.value));
             updateValues();
@@ -57,11 +63,12 @@ window.addEventListener("load", function() {
             document.getElementById("slider-value").innerHTML = `${range}`;
             
 
-            // ciklas per visus 
+            // nuimam check mark nuo visu korteliu
             document.querySelectorAll(".selected-mark").forEach(function(selected){
                     selected.innerHTML = ` `;
             });
 
+            /// uzdedam check mark
             card.querySelector(".selected-mark").innerHTML = `
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>

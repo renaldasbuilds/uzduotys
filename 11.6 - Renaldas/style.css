@@ -1,0 +1,22 @@
+.layout {
+    background: rgba(219, 166, 219, 0.541);
+    height: 100vh;
+}
+
+.cart-layout {
+    display: flex;
+    justify-content: 
+    max-height: 300px;
+    width: 1000px;
+    height: 720px;
+}
+.cart-layout .product-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.cart-layout .product-summary {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 20px;
+}

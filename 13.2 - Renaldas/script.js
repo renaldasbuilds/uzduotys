@@ -135,7 +135,7 @@ console.log('============10=============');
 let letter_array = [ 'Audi' , 'Bmw' , 'Opel' , 'Citroen' , 'Mercedes-Benz' ];
 let letter_sum = 0;
 for (let i = 0; i < letter_array.length; i++) {
-    console.log(letter_array[i] , 'sudaryta iš', letter_array[i].length ,'raidžių');
+    console.log(letter_array[i] , 'sudaryta is', letter_array[i].length ,'raidziu');
     letter_sum += letter_array[i].length;
     console.log('Visų raidžių kiekis:', letter_sum);
 }   

@@ -164,6 +164,6 @@ for(let i = 0; i < numbers_arr.length; i++) {
     }   
 }
 console.log('Kiti skaiciai:', others);
-console.log('Skaiciai:', dividers);
+console.log('Skaiciai kurie dalinasi is 3:', dividers);
 console.log('Suma skaiciu kurie dalinasi is 3: ', aSum);
 console.log('Skaiciu vidurkis: ',bAvg);
